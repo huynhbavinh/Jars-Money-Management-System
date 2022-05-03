@@ -51,12 +51,14 @@ export default {
     <input @input="setMoneyToStore" type="number" v-model="inputMoney" />VNĐ
     <div class="details">
       <button @click="show = !show" class="button-17" role="button">For more details</button>
-      <Transition name="slide-fade">
-        <div v-show="show" class="popup-img">
-          <img src="./assets/Jars-rule-financial.png" alt="Jars rule financial">
-        </div>
-      </Transition>
     </div>
+  </div>
+  <div style="display: flex; justify-content: center">
+    <Transition name="slide-fade">
+      <div v-show="show" class="popup-img">
+        <img src="./assets/Jars-rule-financial.png" alt="Jars rule financial">
+      </div>
+    </Transition>
   </div>
   <Transition name="slide-fade">
     <div class="jar-container" v-show="!show">
@@ -202,5 +204,7 @@ export default {
 .popup-img{
   z-index: 999;
   margin-top: 8px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: inline-block;
 }
 </style>
