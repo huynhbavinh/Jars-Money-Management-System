@@ -207,4 +207,12 @@ export default {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   display: inline-block;
 }
+@media screen and (max-width: 992px) {
+  .jar-container {
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+}
 </style>
